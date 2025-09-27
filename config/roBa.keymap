@@ -97,7 +97,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_GUI  &lt_to_layer_0 2 INT_MUHENKAN  &kp SPACE             &kp ENTER          &lt_to_layer_0 3 INT_HENKAN                             &lt 1 ESCAPE
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
