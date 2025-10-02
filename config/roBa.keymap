@@ -116,19 +116,19 @@
 
         SCROLL {
             bindings = <
-&trans   &kp LS(LC(L))     &kp LC(LS(UP_ARROW))            &kp LS(LC(LA(RIGHT)))  &trans                              &trans  &trans  &trans    &trans        &trans
-&kp TAB  &kp LS(LC(LEFT))  &kp LS(LA(LC(LG(DOWN_ARROW))))  &kp LS(LC(RIGHT))      &trans  &trans          &kp GRAVE   &trans  &trans  &trans    &trans        &trans
-&trans   &trans            &trans                          &trans                 &trans  &kp LS(N9)      &kp LS(N0)  &trans  &trans  &kp SEMI  &kp LS(SEMI)  &kp BACKSLASH
-&trans   &trans            &trans                          &trans                 &trans  &trans          &trans      &trans                                  &trans
+&trans   &kp LS(LC(L))     &kp LC(LS(UP_ARROW))            &kp LS(LC(LA(RIGHT)))  &trans                              &trans  &trans  &trans    &trans             &trans
+&kp TAB  &kp LS(LC(LEFT))  &kp LS(LA(LC(LG(DOWN_ARROW))))  &kp LS(LC(RIGHT))      &trans  &trans          &kp GRAVE   &trans  &trans  &trans    &trans             &trans
+&trans   &trans            &trans                          &trans                 &trans  &kp LS(N9)      &kp LS(N0)  &trans  &trans  &kp SEMI  &kp LS(SEMICOLON)  &kp BACKSLASH
+&trans   &trans            &trans                          &trans                 &trans  &trans          &trans      &trans                                       &trans
             >;
         };
 
         SYMBOL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans         &trans     &kp LS(EQUAL)
-&trans  &trans  &trans  &trans  &trans  &trans          &kp GRAVE   &trans  &trans  &trans         &trans     &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &kp LS(N9)      &kp LS(N0)  &trans  &trans  &kp SEMICOLON  &kp COLON  &kp BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans          &trans      &trans                                    &trans
+&trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans         &trans        &kp LS(EQUAL)
+&trans  &trans  &trans  &trans  &trans  &trans          &kp GRAVE   &trans  &trans  &trans         &trans        &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &kp LS(N9)      &kp LS(N0)  &trans  &trans  &kp SEMICOLON  &kp LS(SEMI)  &kp BACKSLASH
+&trans  &trans  &trans  &trans  &trans  &trans          &trans      &trans                                       &trans
             >;
         };
     };
