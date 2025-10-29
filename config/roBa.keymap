@@ -87,11 +87,13 @@
 
         NAVI {
             bindings = <
-&kp TAB  &kp TILDE       &kp GRAVE        &kp DOUBLE_QUOTES  &kp SQT                                &kp LC(LS(TAB))  &kp HOME          &kp UP_ARROW  &kp END            &kp LC(TAB)
-&trans   &kp PIPE        &kp BACKSLASH    &kp COLON          &kp SEMI           &trans      &trans  &kp BACKSPACE    &kp LEFT          &kp DOWN      &kp RIGHT          &kp DELETE
-&trans   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &trans      &trans  &none            &kp LG(LS(LEFT))  &none         &kp LS(LC(RIGHT))  &trans
-&trans   &trans          &trans           &trans             &trans             &trans      &trans  &trans                                                              &trans
+&kp TAB  &kp TILDE       &kp GRAVE        &kp DOUBLE_QUOTES  &kp SQT                                &kp LC(LS(TAB))  &kp HOME  &kp UP_ARROW  &kp END    &kp LC(TAB)
+&trans   &kp PIPE        &kp BACKSLASH    &kp COLON          &kp SEMI           &trans      &trans  &kp BACKSPACE    &kp LEFT  &kp DOWN      &kp RIGHT  &kp DELETE
+&trans   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &trans      &trans  &none            &none     &none         &none      &trans
+&trans   &trans          &trans           &trans             &trans             &trans      &trans  &trans                                              &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LS(LC(LEFT)) LS(LC(RIGHT))>;
         };
 
         FUNCTION {
