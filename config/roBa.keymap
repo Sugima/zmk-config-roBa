@@ -68,9 +68,9 @@
         default_layer {
             bindings = <
 &kp Q               &kp W      &kp E  &kp R         &kp T                                                                 &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S      &kp D  &kp F         &kp G        &none                         &kp LG(W)                  &kp H        &kp J  &kp K      &kp L    &lt 6 MINUS
+&mt LEFT_CONTROL A  &kp S      &kp D  &kp F         &kp G        &none                         &kp LG(W)                  &kp H        &kp J  &kp K      &kp L    &lt 0 MINUS
 &mt LEFT_SHIFT Z    &kp X      &kp C  &kp V         &kp B        &kp LS(LG(LEFT_BRACKET))      &kp LG(LS(RIGHT_BRACKET))  &kp N        &kp M  &kp COMMA  &kp DOT  &lt 3 SLASH
-&kp LEFT_ALT        &kp LC(Z)  &mo 3  &kp LEFT_GUI  &lt 1 LANG2  &mt LEFT_SHIFT SPACE          &kp ENTER                  &lt 2 LANG1                             &lt 4 ESCAPE
+&kp LEFT_ALT        &kp LC(Z)  &mo 3  &kp LEFT_GUI  &lt 1 LANG2  &mt LEFT_SHIFT SPACE          &kp ENTER                  &lt 2 LANG1                             &lt 0 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -103,17 +103,6 @@
             >;
         };
 
-        MISC {
-            bindings = <
-&trans  &none   &none         &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))                            &none   &none         &none         &none         &trans
-&trans  &none   &kp C_REWIND  &kp C_FAST_FORWARD    &kp C_PLAY_PAUSE  &trans          &trans  &none   &bt BT_SEL 3  &bt BT_SEL 4  &none         &trans
-&trans  &none   &none         &none                 &none             &kp K_MUTE      &trans  &none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp LS(LA(LC(BACKSLASH)))
-&trans  &trans  &trans        &trans                &trans            &trans          &trans  &trans                                            &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
-        };
-
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
@@ -130,6 +119,17 @@
 &trans  &trans            &trans                          &trans                 &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans            &trans                          &trans                 &trans  &trans      &trans  &trans                          &trans
             >;
+        };
+
+        MISC {
+            bindings = <
+&trans  &none   &none         &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))                            &none   &none         &none         &none         &trans
+&trans  &none   &kp C_REWIND  &kp C_FAST_FORWARD    &kp C_PLAY_PAUSE  &trans          &trans  &none   &bt BT_SEL 3  &bt BT_SEL 4  &none         &trans
+&trans  &none   &none         &none                 &none             &kp K_MUTE      &trans  &none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp LS(LA(LC(BACKSLASH)))
+&trans  &trans  &trans        &trans                &trans            &trans          &trans  &trans                                            &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
     };
 };
