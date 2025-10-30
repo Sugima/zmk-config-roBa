@@ -68,21 +68,12 @@
         default_layer {
             bindings = <
 &kp Q               &kp W      &kp E  &kp R         &kp T                                                                 &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S      &kp D  &kp F         &kp G        &none                         &kp LG(W)                  &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
+&mt LEFT_CONTROL A  &kp S      &kp D  &kp F         &kp G        &none                         &kp LC(SPACE)              &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
 &mt LEFT_SHIFT Z    &kp X      &kp C  &kp V         &kp B        &kp LS(LG(LEFT_BRACKET))      &kp LG(LS(RIGHT_BRACKET))  &kp N        &kp M  &kp COMMA  &kp DOT  &lt 3 SLASH
-&kp LEFT_ALT        &kp LC(Z)  &mo 3  &kp LEFT_GUI  &lt 1 LANG2  &mt LEFT_SHIFT SPACE          &kp ENTER                  &lt 2 LANG1                             &lt 6 ESCAPE
+&kp LEFT_ALT        &kp LC(Z)  &mo 3  &kp LEFT_GUI  &lt 2 LANG2  &mt LEFT_SHIFT SPACE          &kp ENTER                  &lt 1 LANG1                             &lt 6 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
-        };
-
-        NUM {
-            bindings = <
-&kp TAB  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                      &kp ASTERISK  &kp N7        &kp N8        &kp N9        &kp PLUS
-&trans   &kp DOLLAR       &kp PERCENT   &kp CARET             &none                  &trans      &trans  &kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&trans   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &none                  &trans      &trans  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&trans   &trans           &trans        &trans                &trans                 &trans      &trans  &trans                                                  &trans
-            >;
         };
 
         NAVI {
@@ -94,6 +85,15 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LS(LC(LEFT)) LS(LC(RIGHT))>;
+        };
+
+        NUM {
+            bindings = <
+&kp TAB  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                      &kp ASTERISK  &kp N7        &kp N8        &kp N9        &kp PLUS
+&trans   &kp DOLLAR       &kp PERCENT   &kp CARET             &none                  &trans      &trans  &kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&trans   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &none                  &trans      &trans  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
+&trans   &trans           &trans        &trans                &trans                 &trans      &trans  &trans                                                  &trans
+            >;
         };
 
         FUNCTION {
