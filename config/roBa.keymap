@@ -38,6 +38,39 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        mkp_mb1_exit: mkp_mb1_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &mkp MB1>,
+                <&macro_pause_for_release>,
+                <&macro_release &mkp MB1>,
+                <&to 0>;
+            label = "MKP_MB1_EXIT";
+        };
+
+        mkp_mb2_exit: mkp_mb2_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &mkp MB2>,
+                <&macro_pause_for_release>,
+                <&macro_release &mkp MB2>,
+                <&to 0>;
+            label = "MKP_MB2_EXIT";
+        };
+
+        mkp_mb3_exit: mkp_mb3_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &mkp MB3>,
+                <&macro_pause_for_release>,
+                <&macro_release &mkp MB3>,
+                <&to 0>;
+            label = "MKP_MB3_EXIT";
+        };
     };
 
     behaviors {
@@ -107,10 +140,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &mkp MB2      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &mkp MB1  &trans        &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &mkp_mb2_exit     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &mkp_mb1_exit  &trans       &trans  &trans                          &trans
             >;
         };
 
