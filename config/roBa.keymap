@@ -71,6 +71,13 @@
                 <&to 0>;
             label = "MKP_MB3_EXIT";
         };
+
+        mkp_mb1_double: mkp_mb1_double {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1>, <&mkp MB1>, <&to 0>;
+            label = "MKP_MB1_DOUBLE";
+        };
     };
 
     behaviors {
@@ -92,6 +99,13 @@
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             tap-ms = <20>;
+        };
+
+        td_mb1: td_mb1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&mkp_mb1_exit>, <&mkp_mb1_double>;
         };
     };
 
@@ -143,7 +157,7 @@
 &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &mkp_mb2_exit     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &mkp_mb1_exit  &trans       &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &td_mb1  &trans              &trans  &trans                          &trans
             >;
         };
 
