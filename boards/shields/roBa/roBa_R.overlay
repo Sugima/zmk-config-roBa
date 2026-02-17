@@ -25,7 +25,13 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        input-processors = <&zip_temp_layer 4 400>;
+        input-processors = <&zip_temp_layer 5 500>;
+
+        gesture {
+            layers = <7>;
+            process-next;
+            input-processors = <&zip_keybind_gesture>;
+        };
     };
 };
 
