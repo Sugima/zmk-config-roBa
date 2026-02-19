@@ -116,8 +116,8 @@
         bindings =
             <&kp LG(RIGHT_BRACKET)>,
             <&kp LG(LEFT_BRACKET)>,
-            <&kp LG(W)>,
-            <&kp LG(T)>;
+            <&kp LG(T)>,
+            <&kp LG(W)>;
 
         tick = <30>;
         tap-ms = <10>;
