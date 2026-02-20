@@ -210,7 +210,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &kp LG(PLUS)  &kp LC(LEFT_ARROW)        &kp LC(UP_ARROW)  &kp LC(RIGHT)              &kp LG(PLUS)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &kp LG(LS(LEFT_BRACKET))  &kp LG(TAB)       &kp LG(LS(RIGHT_BRACKET))  &kp LG(MINUS)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans                    &trans            &trans                     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &kp LG(NUMBER_1)          &kp LG(NUMBER_2)  &kp NUMBER_3               &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                               &trans
             >;
 
